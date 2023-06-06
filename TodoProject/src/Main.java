@@ -44,7 +44,7 @@ public class Main {
                         user.listTodoItems();
                         break;
                     case "4":
-                        todoList.saveTodoListToFile("data/opgaver.txt");
+                        todoList.saveTodoListToFile("TodoProject/Data/opgaver.txt");
                         running = false;
                         System.out.println("Udført");
                         break;

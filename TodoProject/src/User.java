@@ -34,7 +34,7 @@ public class User {
         String password = scanner.nextLine();
 
         // Authenticator
-        try (BufferedReader reader = new BufferedReader(new FileReader("users.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("TodoProject/Data/users.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(",");
@@ -92,7 +92,7 @@ public class User {
     }
 
     public void saveToFile() {
-        String filename = "users.txt";
+        String filename = "TodoProject/Data/users.txt";
 
         try (PrintWriter writer = new PrintWriter(new FileWriter(filename, true))) {
             writer.println(username + "," + password);
